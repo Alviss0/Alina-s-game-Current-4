@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../Common/DefaultPage/nullStyle.css" />
+    <link rel="stylesheet" href="../../Common/DefaultPage/fonts.css" />
+
+    <link rel="stylesheet" href="../../Common/DefaultPage/page.css" />
+
+    <link rel="stylesheet" href="../../Common/Theme/ThemeCSS/darkTheme.css" id="themeLink" />
+
+    <link rel="stylesheet" href="../../Common/Modal/modal.css" />
+    <link rel="stylesheet" href="../../Common/Results/result.css" />
+    <link rel="stylesheet" href="css/lvl3.css" />
+    <title>Уровень 3</title>
+  </head>
+
+  <body class="page">
+    <script src="../../Common/Theme/ThemeJS/loadTheme.js"></script>
+    <header class="header">
+      <p class="header__author">Created by Alvisso</p>
+    </header>
+
+    <main class="main">
+      <section class="main__content content">
+        <div class="content__maze maze">
+          <img src="Pictures/maze.jpg" alt="" class="maze__picture" />
+          <div class="maze__controll controll">
+            <div class="controll__answers answer">
+              <div class="answer__color">
+                <p class="answer__colorName">1</p>
+                <div class="answer__colorField">
+                  <div id="DropField1" class="answer__dropField"></div>
+                </div>
+              </div>
+              <div class="answer__color">
+                <p class="answer__colorName">2</p>
+                <div class="answer__colorField">
+                  <div id="DropField2" class="answer__dropField"></div>
+                </div>
+              </div>
+              <div class="answer__color">
+                <p class="answer__colorName">3</p>
+                <div class="answer__colorField">
+                  <div id="DropField3" class="answer__dropField"></div>
+                </div>
+              </div>
+              <div class="answer__color">
+                <p class="answer__colorName">4</p>
+                <div class="answer__colorField">
+                  <div id="DropField4" class="answer__dropField"></div>
+                </div>
+              </div>
+            </div>
+            <div class="controll__variants variants">
+              <div class="variants__variant">
+                <div class="variants__block">
+                  <img src="Pictures/Yellow.jpg" alt="" id="Yellow1" class="variants__color" draggable="true" />
+                </div>
+              </div>
+
+              <div class="variants__variant">
+                <div class="variants__block">
+                  <img src="Pictures/Blue.jpg" alt="" id="Blue4" class="variants__color" draggable="true" />
+                </div>
+              </div>
+              <div class="variants__variant">
+                <div class="variants__block">
+                  <img src="Pictures/Green.jpg" alt="" id="Green3" class="variants__color" draggable="true" />
+                </div>
+              </div>
+              <div class="variants__variant">
+                <div class="variants__block">
+                  <img src="Pictures/Pink.jpg" alt="" id="Pink2" class="variants__color" draggable="true" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__changeTheme">
+        <button id="BtnColorChange" class="button main__buttonChangeTheme">Сменить тему</button>
+        <button id="Back2Menu" class="button main__buttonBack2Menu" onclick='location.href="../Main/index.html"'>Меню</button>
+      </section>
+    </main>
+
+    <script type="module" src="js/base.js"></script>
+  </body>
+</html>

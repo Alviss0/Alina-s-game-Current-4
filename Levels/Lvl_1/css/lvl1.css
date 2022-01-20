@@ -1,0 +1,18 @@
+.content__field {
+  height: 90%;
+  border-radius: 15px;
+
+  /* width: 100%; */
+  background-color: #fff;
+  position: relative;
+}
+
+.lamp {
+  position: absolute;
+  width: 8%;
+  height: 16%;
+}
+.lamp:hover {
+  cursor: pointer;
+}
+

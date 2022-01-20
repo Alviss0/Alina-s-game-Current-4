@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../Common/DefaultPage/nullStyle.css" />
+    <link rel="stylesheet" href="../../Common/DefaultPage/fonts.css" />
+
+    <link rel="stylesheet" href="../../Common/DefaultPage/page.css" />
+
+    <link rel="stylesheet" href="../../Common/Theme/ThemeCSS/darkTheme.css" id="themeLink" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Игра на время</title>
+  </head>
+  <body class="page">
+    <script src="../Common/Theme/ThemeJS/loadTheme.js"></script>
+    <header class="header">
+      <p class="header__author">Created by Alvisso</p>
+    </header>
+    <main class="main">
+      <section class="main__content content">
+        <h1 class="content__label">Игра на время</h1>
+        <h2 class="content__target">Эта игра нацелена на развитие ощущение времени</h2>
+
+        <ul class="content__goalList goalList">
+          <li class="goalList__item">На каждом уровне выделяется определенное количество времени на его выполнение</li>
+          <li class="goalList__item">Ты не будешь видеть таймер, полагайся на свои ощущения</li>
+          <li class="goalList__item">Чем дальше, тем сложнее и интересней</li>
+          <li class="goalList__item">Не забывай читать инструкцию к уровню!</li>
+        </ul>
+        <div class="content__authorization authorization">
+          <h2 class="authorization__label">Авторизация</h2>
+
+          <input type="text" class="authorization__nameInput" placeholder="Введи своё имя" id="InputNameField" />
+
+          <button class="button authorization__buttonStart" id="buttonStart">Старт</button>
+        </div>
+      </section>
+      <section class="main__changeTheme">
+        <button id="BtnColorChange" class="button main__buttonChangeTheme">Сменить тему</button>
+        <button id="Back2Menu" class="button main__buttonBack2Menu" onclick='location.href="../Main/index.html"'>Меню</button>
+      </section>
+
+    </main>
+
+    <script type="module" src="js/base.js"></script>
+  </body>
+</html>
