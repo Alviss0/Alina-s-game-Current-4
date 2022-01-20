@@ -1,0 +1,56 @@
+.page {
+  display: grid;
+  grid-template: 10% 1fr/1fr;
+}
+
+.header {
+  padding: 10px;
+}
+.header__author {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.main {
+  display: grid;
+  grid-template: 1fr/ 10% 1fr 10%;
+}
+.main__content {
+  grid-column: 2/3;
+}
+.main__changeTheme {
+  align-self: flex-end;
+  padding: 10px;
+}
+.main__buttonChangeTheme {
+  padding: 0;
+  width: 100%;
+}
+
+.main__buttonBack2Menu {
+  padding: 0;
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.button {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 5px;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

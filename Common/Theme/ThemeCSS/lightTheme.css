@@ -1,0 +1,18 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #c2a1f1, #23a6d5, #23d5ab, #d9d2e9, #ead1dc, #ffffff);
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite;
+}
+.header__author {
+  color: black;
+}
+.button {
+  color: #f0f4ef;
+  background-color: #56548c;
+}
+.button:hover {
+  background-color: #8e8cd2;
+}
+.authorization__nameInput {
+  border-color: #56548c;
+}

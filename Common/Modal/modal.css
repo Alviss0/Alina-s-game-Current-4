@@ -1,0 +1,118 @@
+/*Анимации модального окна*/
+/*Анимация появления*/
+.modalLayer.open .modal__overlay,
+.modalLayer.open .modal__window {
+  opacity: 1;
+  z-index: 1000;
+}
+.modalLayer.open .modal__window {
+  transform: translateY(100px);
+}
+.modalLayer.open .modal__overlay {
+  transition: background-color 2s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*Анимация закрытия*/
+.modalLayer.close .modal__overlay,
+.modalLayer.close .modal__window {
+  opacity: 1;
+  z-index: 1000;
+}
+.modalLayer.close .modal__window {
+  transform: translateY(-110%);
+}
+.modalLayer.close .modal__overlay {
+  transition: background-color 2s;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modal__window,
+.modal__overlay {
+  opacity: 0;
+  z-index: -1;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modal__window {
+  transform: translateY(-110%);
+  transition: transform 2s;
+  width: 600px;
+
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #d4fcfb;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+
+  border: 5px solid #9cf8f7;
+  box-shadow: 0px 0px 7px white;
+}
+
+.modal__header {
+  flex: 0 0 30px;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px 10px;
+  border-bottom: 2px solid #9cf8f7;
+
+  font-size: 35px;
+  font-weight: bold;
+}
+.modal__body {
+  flex: 1 1 250px;
+  border-bottom: 2px solid #9cf8f7;
+  padding: 10px 0;
+}
+
+.modal__goalList {
+  border-radius: 10px;
+  padding: 10px 5px;
+  background-color: #9cf8f7;
+
+  font-size: 25px;
+}
+.modal__goal {
+  margin-bottom: 5px;
+}
+.modal__goal:last-child {
+  margin-bottom: 0;
+}
+.modal__footer {
+  flex: 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 10px;
+}
+
+.modal__go {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 5px;
+
+  padding: 10px 30px;
+
+  color: #f0f4ef;
+  background-color: #56548c;
+
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.modal__go:hover {
+  cursor: pointer;
+  background-color: #8e8cd2;
+}
